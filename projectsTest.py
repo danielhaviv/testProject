@@ -10,3 +10,7 @@ print("Hello")
 # COMMAND ----------
 
 print("Hello from github")
+
+# COMMAND ----------
+
+print("Hello DynamicYield")
