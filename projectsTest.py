@@ -13,4 +13,13 @@ print("Hello from github")
 
 # COMMAND ----------
 
-print("Hello DynamicYield")
+
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC select * from table
+
+# COMMAND ----------
+
+# MAGIC %tensoboard
