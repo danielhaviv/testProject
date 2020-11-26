@@ -22,4 +22,7 @@ print("Hello from github")
 
 # COMMAND ----------
 
-# MAGIC %tensoboard
+# MAGIC %sh ls -ld /mnt/driver-deamon/*
+
+# COMMAND ----------
+

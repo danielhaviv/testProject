@@ -14,3 +14,4 @@ print("Hello")
 
 // COMMAND ----------
 
+print("Hello from databricks")
