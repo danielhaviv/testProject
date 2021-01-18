@@ -22,3 +22,37 @@ print("Hello from databricks2")
 
 // COMMAND ----------
 
+// MAGIC %python
+// MAGIC spark.conf.set("spark.sql.shuffle.partitions", "1024")
+
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC df = spark.range(1,1000000).repartition(1024)
+
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC spark.conf.set("spark.sql.adaptive.enabled", "false")
+
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC df.join(df).count()
+
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC display(dbutils.fs.mounts())
+
+// COMMAND ----------
+
+// MAGIC %fs ls /mnt/yan-data
+
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC dbutils.widgets.dropdown("X123", "1", [str(x) for x in range(1, 10)])
+
+// COMMAND ----------
+
