@@ -5,11 +5,9 @@ print("Goodbye!!!")
 
 print("Hello")
 
-
-
 # COMMAND ----------
 
-print("Hello from github")
+print("Hello Kenshoo from github")
 
 # COMMAND ----------
 
