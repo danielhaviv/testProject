@@ -6,3 +6,8 @@
 
 # MAGIC %md 
 # MAGIC ## This is another one
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ### A third one
