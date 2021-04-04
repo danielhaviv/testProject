@@ -7,7 +7,7 @@ print("Hello")
 
 # COMMAND ----------
 
-print("Hello Kenshoo from github")
+
 
 # COMMAND ----------
 
@@ -23,4 +23,5 @@ print("Hello Kenshoo from github")
 # MAGIC %sh ls -ld /mnt/driver-deamon/*
 
 # COMMAND ----------
+
 
