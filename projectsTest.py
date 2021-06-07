@@ -1,4 +1,8 @@
 # Databricks notebook source
+# MAGIC %pip install function-libs==0.0.1
+
+# COMMAND ----------
+
 print("Goodbye!!!")
 
 # COMMAND ----------
@@ -7,7 +11,7 @@ print("Hello")
 
 # COMMAND ----------
 
-
+# Hi Similar
 
 # COMMAND ----------
 
