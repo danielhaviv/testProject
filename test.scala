@@ -10,7 +10,7 @@ print("Hello")
 // MAGIC %sql
 // MAGIC select count(*)
 // MAGIC from range(1, 100000)
-// MAGIC group by id 
+// MAGIC group by daniel
 
 // COMMAND ----------
 
@@ -21,4 +21,5 @@ print("Hello from databricks")
 print("Hello from databricks")
 
 // COMMAND ----------
+
 
