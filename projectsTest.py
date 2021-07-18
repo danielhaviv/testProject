@@ -7,7 +7,7 @@ print("Goodbye!!!")
 
 # COMMAND ----------
 
-print("Hello again")
+print("Hello")
 
 # COMMAND ----------
 
