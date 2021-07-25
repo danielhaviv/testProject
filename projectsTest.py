@@ -3,7 +3,7 @@
 
 # COMMAND ----------
 
-print("Goodbye!!!")
+print("Goodbye!!")
 
 # COMMAND ----------
 
