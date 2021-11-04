@@ -75,4 +75,4 @@ spark.sql("show create table " + tables[tableName].tableName)
 
 // COMMAND ----------
 
-
+// MAGIC %sh 

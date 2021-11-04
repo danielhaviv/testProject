@@ -11,11 +11,11 @@ print("Hello")
 
 # COMMAND ----------
 
-# Hi Similar
+# Hi Similarweb
 
 # COMMAND ----------
 
-
+# MAGIC %pip install boto3
 
 # COMMAND ----------
 
