@@ -1,4 +1,9 @@
 // Databricks notebook source
+// MAGIC %python
+// MAGIC from UsersPipe import myclass
+
+// COMMAND ----------
+
 // MAGIC %sql
 // MAGIC 
 // MAGIC SELECT * FROM cloud_files("/databricks-datasets/retail-org/sales_orders/", "json", map("cloudFiles.inferColumnTypes", "true"))
