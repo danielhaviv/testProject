@@ -25,7 +25,7 @@ print("Hello from databricks")
 
 // COMMAND ----------
 
-print("Hello from databricks")
+print("Goodbye from databricks")
 
 // COMMAND ----------
 
