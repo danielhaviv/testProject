@@ -1,5 +1,48 @@
 // Databricks notebook source
-print("Hello")
+// MAGIC %python
+// MAGIC def custom_udf(input):
+// MAGIC    return "hello:" +input
+// MAGIC 
+// MAGIC spark.udf.register("custom", custom_udf)
+
+// COMMAND ----------
+
+
+
+// COMMAND ----------
+
+// MAGIC %pip install xlrd
+
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC import pandas 
+// MAGIC import io
+// MAGIC 
+// MAGIC df = spark.read.format("binaryFile").option("pathGlobFilter", "*.xlsx").load("/FileStore/excel_pyspark_debug-1.xlsx")
+// MAGIC 
+// MAGIC bstream = io.BytesIO(df.select("content").collect()[0].content)
+// MAGIC pandas.read_excel(bstream)
+// MAGIC 
+// MAGIC 
+// MAGIC def load_xlsx(iterator):
+// MAGIC     for file_content in iterator:
+// MAGIC         yield pandas.read_excel(file_content)
+// MAGIC 
+// MAGIC # df.mapInPandas(load_xlsx, schema)
+// MAGIC 
+// MAGIC # spark.read
+// MAGIC # pd.read
+
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC display(df)
+
+// COMMAND ----------
+
+// MAGIC %sql
+// MAGIC select custom("daniel")
 
 // COMMAND ----------
 
@@ -83,4 +126,5 @@ print("Hello from databricks2")
 // MAGIC loadedDf = spark2.read.option("spark.redis.host", "server1").format("org.apache.spark.sql.redis").option("table", "person").load()
 
 // COMMAND ----------
+
 
