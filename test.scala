@@ -1,4 +1,13 @@
 // Databricks notebook source
+spark.readStream
+  .format("delta")
+  .option("maxFilesPerTrigger", "1")
+  .load(inputDir)
+  .writeStream
+  .trigge
+
+// COMMAND ----------
+
 // MAGIC %python
 // MAGIC def custom_udf(input):
 // MAGIC    return "hello:" +input
@@ -7,7 +16,13 @@
 
 // COMMAND ----------
 
+// MAGIC %sql
+// MAGIC select max(version) from (desc history delta.`/databricks-datasets/learning-spark-v2/people/people-10m.delta`)
 
+// COMMAND ----------
+
+// MAGIC %python
+// MAGIC display(spark.createDataFrame([{'name': 'bob', 'age': '7'}, {'name': 'dan', 'age': '8'}]))
 
 // COMMAND ----------
 
