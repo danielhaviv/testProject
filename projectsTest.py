@@ -1,19 +1,21 @@
 # Databricks notebook source
-print("Goodbye Kenshoo")
+
+
+# COMMAND ----------
+
+print("Goodbye!!")
 
 # COMMAND ----------
 
 print("Hello")
 
+# COMMAND ----------
 
+# Hi Similarweb
 
 # COMMAND ----------
 
-print("Hello from github")
-
-# COMMAND ----------
-
-
+# MAGIC %pip install boto3
 
 # COMMAND ----------
 
@@ -33,5 +35,6 @@ with mlflow.start_run():
     mlflow.log_metric("d", 2)
 
 # COMMAND ----------
+
 
 
